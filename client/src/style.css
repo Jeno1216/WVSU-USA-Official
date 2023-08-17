@@ -1,0 +1,132 @@
+html {
+    overflow-y: scroll;
+  }
+
+  
+*{
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: bold;
+    
+}
+.nav-container{
+    height: 80px;
+
+
+}
+.logo{
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+    font-weight: bolder;
+    letter-spacing: -3px;
+}
+
+.nav-links {
+    position: relative;
+    display: inline-block;
+}
+
+.nav-links::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;  /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: rgb(0, 102, 255);  /* Adjust border color as needed */
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-links:hover::after {
+    width: 100%;
+}
+
+.mobile-nav-container {
+    width: 95%;
+    height: 50vh;
+    position: fixed;
+    top: 10px; 
+    left: 50%; /* Place the left edge at the center of the viewport */
+    transform: translateX(-50%); /* Center vertically */
+    backdrop-filter: blur(3px)
+
+}
+
+/* Mobile Navigation Bar Animation*/
+.mobile-nav-container {
+    animation-name: mobile-nav-bar;
+    animation-duration: 0.3s;
+
+  }
+
+  @keyframes mobile-nav-bar {
+    from {
+        opacity: 0;
+        top: 0;
+      }
+      to {
+        opacity: 1;
+        bottom: 0;
+      }
+    
+  }
+  
+
+  .img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, rgb(0, 0, 0), rgba(0, 0, 0, 0.329));
+
+  }
+
+.hero-name{
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.hero-desc{
+    color: rgba(233, 233, 233, 0.76);
+    font-weight: normal;
+}
+  
+.hero-button{
+    background: linear-gradient(to bottom right, blue, yellow);
+    font-weight: normal;
+    
+}
+
+/* Home.css or a new CSS file */
+.button-animation {
+    animation: buttonAnimation 1s ease-in-out infinite;
+  }
+
+@keyframes buttonAnimation {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.hero-avatar{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.body{
+  background-color: rgba(255, 255, 255, 0.76);
+}
+
