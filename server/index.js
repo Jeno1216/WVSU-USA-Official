@@ -30,7 +30,7 @@ app.use(express.json());
 
 // Configure CORS settings for cross-origin requests
 app.use(cors({
-    origin: ['wvsu-usa-official.vercel.app'],  // Allow requests from this origin
+    origin: ['wvsu-usa-official-git-main-jenobellido-wvsueduph.vercel.app'],  // Allow requests from this origin
     methods: ['GET', 'POST', 'PUT', 'DELETE'],  // Allow specified HTTP methods
     credentials: true  // Allow credentials like cookies to be included in requests
 }));
