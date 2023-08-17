@@ -44,7 +44,7 @@ function Home() {
           </div>
 
           <div className=' col-lg-6 mx-2 m-md-0  d-sm-none d-lg-flex flex-column justify-content-center align-items-center   d-md-flex  d-none  '>
-            <img className='hero-avatar' src="../images/borce.png" alt="" />
+            <img className='hero-avatar' src="/borce.png" alt="" />
           </div>
         </div>
       </div>
